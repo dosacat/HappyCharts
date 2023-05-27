@@ -8,13 +8,13 @@ My approach to the problem:
 4. Minimal styling and colours for design.  
 
 Known issues:  
-1 Styling issues in the search and dropdown sizing, employee cards.
-2 If you search team name in the search bar, the chart will not transform, it only responds to the dropdown.  
-3.Drag and Drop does not work in the chart and does not update data as a result.  
-4.Design could better accomodate varying screens.  
+1. Styling issues in the search and dropdown sizing, employee cards.
+2. If you search team name in the search bar, the chart will not transform, it only responds to the dropdown.  
+3. Drag and Drop does not work in the chart and does not update data as a result.  
+4. Design could better accomodate varying screens.  
 
 Notes from me:
-The comments I would not leave in production, comments were there primarily for the reviewer.
+The comments I would not leave in production, comments were there primarily for the reviewer.  
 The chart library I used, uses drag and drop in it to allow dragging nodes, however it threw errors when dropping nodes.
 
 What I could have done better:  
