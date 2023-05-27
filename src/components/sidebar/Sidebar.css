@@ -8,6 +8,7 @@
 
   @media only screen and (max-width: 978px) {
     .sidebar {
+      /* width: auto; */
       height:40vh;
       overflow-y: scroll;
 
@@ -21,7 +22,7 @@
 .filters *{
     padding:5px;
     border-radius: 5px;
-    margin:5px;
+    margin:2px;
 
   }
 
@@ -36,8 +37,3 @@
     flex-direction: column;
 }
 
-#select{
-  width:200px;
-  background-color: white;
-  }
-  

@@ -7,6 +7,16 @@ import { useState,useEffect } from 'react';
 
 function App() {
   const[Employees,setEmployees]= useState(null); //To store all retrieved employees
+  const [search, setSearch] = useState(""); //For the search bar
+  const [team, setTeam] = useState('all'); //For storing drop down text
+
+  const handleChange = (event) => {
+    setTeam(event.target.value);
+  };
+
+  const handleSearch = (event) => {
+    setSearch(event.target.value);
+  };
 
   useEffect(() => {
     const doGetEmployees = async () => {
@@ -21,8 +31,8 @@ function App() {
     <div className="container">
       
       <Navbar />
-      <Sidebar props={Employees}/>
-      <Main props={Employees}/>
+      <Sidebar Employees={Employees} handleChange={handleChange} handleSearch={handleSearch} team={team} search={search}/>
+      <Main Employees={Employees} team={team} search={search}/>
       
     </div>
   );

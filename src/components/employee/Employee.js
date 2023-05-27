@@ -1,20 +1,21 @@
 import React from 'react'
+import helper from '../../helper';
 import './Employee.css';
 
 function Employee({employees,filters,team}) {
   var props = employees
-
-  //There should be a more efficient way to this
-  if(filters!=="" && team==="all"){
-    props = props.filter(obj => Object.values(obj).some(val => typeof val === 'string' && val.toLowerCase().includes(filters.toLowerCase())));
-  }
-  else if(filters==="" && team!=="all"){
-    props = props.filter(obj=> Object.values(obj).some(val => val===team))
-  }
-  else if(filters!=="" && team!=="all"){
-    props = props.filter(obj=> Object.values(obj).some(val => val===team))
-    props = props.filter(obj => Object.values(obj).some(val => typeof val === 'string' && val.toLowerCase().includes(filters.toLowerCase())));
-  }
+  props = helper(props,filters,team)
+  //There should be a more efficient way to this, also make it a function
+  // if(filters!=="" && team==="all"){
+  //   props = props.filter(obj => Object.values(obj).some(val => typeof val === 'string' && val.toLowerCase().includes(filters.toLowerCase())));
+  // }
+  // else if(filters==="" && team!=="all"){
+  //   props = props.filter(obj=> Object.values(obj).some(val => val===team))
+  // }
+  // else if(filters!=="" && team!=="all"){
+  //   props = props.filter(obj=> Object.values(obj).some(val => val===team))
+  //   props = props.filter(obj => Object.values(obj).some(val => typeof val === 'string' && val.toLowerCase().includes(filters.toLowerCase())));
+  // }
     
   return (
     <>
