@@ -1,0 +1,43 @@
+.sidebar {
+    background: #acb463;
+    grid-area: sidebar;
+    padding: 20px 10px;
+    height: 550px;
+    overflow-y: scroll;
+  }
+
+  @media only screen and (max-width: 978px) {
+    .sidebar {
+      height:40vh;
+      overflow-y: scroll;
+
+    }
+    .filters {
+        display:flex;
+        flex-direction: column;
+      }
+}
+
+.filters *{
+    padding:5px;
+    border-radius: 5px;
+    margin:5px;
+
+  }
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.employee-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#select{
+  width:200px;
+  background-color: white;
+  }
+  

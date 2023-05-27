@@ -1,0 +1,12 @@
+.navbar {
+    background: #2a79b9;
+    height: 60px;
+    padding: 0 30px 0 30px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+  }
+
+  .filters{
+    display:flex
+  }
