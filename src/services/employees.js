@@ -20,6 +20,11 @@ let data = UserDB()
     return data
 
     //also a function to send a patch request for drag and drop feature.
+
+    // const update = async (id, editManager) => {
+    //   const request = await axios.put(`${ baseUrl }/${id}`, editManager)
+    //   return request.then(response => response.data)
+    // }
   
   }
 export {getEmployees};
