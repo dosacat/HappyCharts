@@ -1,6 +1,8 @@
 Prompt - Build a page that allows the user to visualise and update an employee organization chart
 interactively with drag & drop.
 
+Link to website: https://happy-charts.onrender.com/  
+
 My approach to the problem:  
 1. Divided the screen into navbar, sidebar and main components.  
 2. Built filters - search and drop drown in the sidebar.  
