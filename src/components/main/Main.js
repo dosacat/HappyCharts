@@ -1,7 +1,7 @@
 import React from 'react'
 import './Main.css';
 import OrganizationChart from "@dabeng/react-orgchart";
-import MyNode from "./my-node";
+import MyNode from "./TreeNode";
 import helper, { hierachyTree } from '../../helper';
 
 // https://github.com/dabeng/react-orgchart - Link to library used,
