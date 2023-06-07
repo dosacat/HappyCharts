@@ -2,22 +2,21 @@ import React from 'react'
 import './Main.css';
 import OrganizationChart from "@dabeng/react-orgchart";
 import MyNode from "./TreeNode";
-import helper, { hierachyTree } from '../../helper';
+import helper, { hierachyTree } from '../../utils';
 
 // https://github.com/dabeng/react-orgchart - Link to library used,
-/* I tried to set draggable to {true} but it failed on firefox
-*/
 
-function Main({Employees,team,search}) {
+
+function Main({employees,team,search}) {
  
-  if (Employees) {
+  if (employees) {
 
-    var props = Employees
+    var props = employees
     props = helper(props,search="",team)
     props = hierachyTree(props) //convert our data to a heirachy tree, I see issues arising if more than 1 root present
     
   }
-  if (!Employees) {
+  if (!employees) {
     return null
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./my-node.css";
+import "./TreeNode.css";
 
 const propTypes = {
   nodeData: PropTypes.object.isRequired,
